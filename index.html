@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <!-- SEO Meta Tags -->
+  <title>J.R. Ethiraaj | Sound Designer & SFX Editor</title>
+  <meta name="description" content="Official portfolio of J.R. Ethiraaj (Ethiraj), legendary sound designer and SFX editor in the Telugu and Kannada film industries. Architect of iconic soundscapes like Athadu, Major, Evaru, and Majili.">
+  <meta name="keywords" content="J R Ethiraj, J R Ethiraaj, Sound Designer, SFX Editor, Telugu Cinema, Tollywood Sound, Athadu Sound Design, Major Sound Designer, Ramanaidu Studios, Sound Design Portfolio">
+  <meta name="author" content="J.R. Ethiraaj">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="J.R. Ethiraaj | Sound Designer & SFX Editor">
+  <meta property="og:description" content="Portfolio of veteran Indian sound designer J.R. Ethiraaj. Shaping the auditory landscape of cinema for over two decades.">
+  <meta property="og:image" content="images/hero_bg.png">
+  <meta property="og:type" content="website">
+
+  <!-- Mobile / PWA meta -->
+  <meta name="theme-color" content="#07090c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN — defer so it never blocks page render -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="#" class="logo-area" id="logo-link">
+        <div class="logo-wave">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <span class="logo-text">J.R. ETHIRAAJ</span>
+      </a>
+      
+      <nav class="main-nav" id="main-navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#works" class="nav-link">Filmography</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="mobile-dropdown-nav" id="mobile-dropdown" role="navigation" aria-label="Mobile navigation">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#works" class="mobile-nav-link">Filmography</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <!-- Background as img-style div, NOT background-attachment:fixed -->
+      <div class="hero-bg-overlay" style="background-image: url('images/hero_bg.png');"></div>
+      <div class="hero-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge fade-in-up">
+            <span class="pulse-dot"></span>
+            <span>Sound Designer &amp; SFX Editor</span>
+          </div>
+          <h1 class="hero-title fade-in-up delay-1">
+            J R Ethiraaj
+          </h1>
+          <p class="hero-subtitle fade-in-up delay-2">
+            A legendary Sound Designer and Sound Effects Editor shaping the auditory landscapes of Indian cinema. His state-of-the-art studio is located <strong>@ Ramanaidu Studios, Jubilee Hills</strong>, Hyderabad.
+          </p>
+          <div class="hero-actions fade-in-up delay-3">
+            <a href="#works" class="btn btn-primary">
+              <i data-lucide="film"></i>
+              <span>Explore Filmography</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i data-lucide="phone"></i>
+              <span>Get In Touch</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- Filmography Section -->
+    <section id="works" class="works-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Works</span>
+          <h2 class="section-title">Selected <span class="gradient-text">Filmography</span></h2>
+          <div class="title-underline center"></div>
+          <p class="section-subtitle">
+            The major cinematic blockbusters J R Ethiraaj has worked on. Tap the link under each poster to watch its official trailer.
+          </p>
+        </div>
+
+        <!-- Films Grid — populated by JS -->
+        <div class="films-grid" id="films-container"></div>
+
+        <!-- Other Movies Section -->
+        <div class="other-films-section">
+          <h3 class="other-films-title">Other Notable Works</h3>
+          <div class="other-films-grid" id="other-films-container">
+            <!-- Populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-container text-center">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Schedule a <span class="gradient-text">Sonic Session</span></h2>
+        <p class="paragraph-large">
+          Let's talk about the acoustic direction of your film, web series, or commercial project.
+        </p>
+        
+        <div class="contact-methods centered-methods">
+          <div class="contact-card">
+            <i data-lucide="map-pin"></i>
+            <div class="card-text">
+              <h4>Studio Location</h4>
+              <p>Ramanaidu studios, Jubilee hills, Hyderabad</p>
+            </div>
+          </div>
+          
+          <div class="contact-card">
+            <i data-lucide="phone"></i>
+            <div class="card-text">
+              <h4>Phone Number</h4>
+              <p><a href="tel:9849664409">9849664409</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <i data-lucide="mail"></i>
+            <div class="card-text">
+              <h4>Email Address</h4>
+              <p><a href="mailto:jrethiraaj@gmail.com">jrethiraaj@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links-container centered-socials">
+          <a href="https://www.moviebuff.com/jr-ethiraj" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Moviebuff Profile">
+            <i data-lucide="database"></i>
+            <span>Moviebuff</span>
+          </a>
+          <a href="https://www.imdb.com/find?q=J+R+Ethiraj" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="IMDb Search">
+            <i data-lucide="film"></i>
+            <span>IMDb</span>
+          </a>
+          <a href="https://www.themoviedb.org/search?query=J+R+Ethiraj" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="TMDB Search">
+            <i data-lucide="video"></i>
+            <span>TMDB</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content text-center">
+      <p class="copyright">&copy; 2026 J R Ethiraaj. All rights reserved. Sound Designer &amp; Sound Effects Editor.</p>
+      <p class="credits">Designed &amp; Engineered for cinematic sound excellence.</p>
+      <div class="footer-dot-matrix" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
